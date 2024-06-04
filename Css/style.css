@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #02577a;
+    color: #fefae0;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    order: 0;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px 1rem;
+    font-size: 2rem;
+    order: 1;
+    text-align: center;
+    color: #d4f0fc;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    order: 2;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #d4f0fc;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+header nav ul li a:hover {
+    color: #EB984E;
+}
+
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        padding: 0.5rem 1rem;
+    }
+
+    header h1 {
+        text-align: initial;
+    }
+
+    header nav {
+        justify-content: flex-end;
+        order: 2;
+        width: initial;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li a {
+        text-align: initial;
+        width: initial;
+    }
+
+    header nav ul li a:hover {
+        color: #02a9f7;
+    }
+
+}
+
+footer {
+    background-color: #02577a;
+    color: #d4f0fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+footer ol,
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #d4f0fc;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: #02a9f7;
+}
+
+/* FOOTER RESPONSIV*/
+@media (min-width: 1024px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+#planes>section {
+    text-align: center;
+    padding: 1rem;
+}
+
+#planes>section section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#planes h2 {
+    background-color:#02a9f7;
+    color: #d4f0fc;
+    text-align: center;
+    padding: 0.5rem 1rem;
+
+}
+
+
+#SobreNosotros>section {
+    text-align: center;
+    padding: 1rem;
+}
+
+#SobreNosotros>section section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#SobreNosotros h2 {
+    background-color: #02a9f7;
+    color: #d4f0fc;
+    text-align: center;
+    padding: 0.5rem 1rem;
+
+}
+
+#SobreNosotros h3 {
+    color: #d4f0fc;
+    font-size: 2rem;
+    margin: 0;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-top: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #01303f;
+    border-radius: 4px;
+
+}
+
